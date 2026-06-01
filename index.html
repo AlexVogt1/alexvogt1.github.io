@@ -14,7 +14,7 @@
   }
   * { box-sizing:border-box; }
   html,body { margin:0; padding:0; background:var(--bg); color:var(--ink); }
-  body { font:16px/1.65 -apple-system, "Inter", system-ui, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing:antialiased; }
+  body { font:15px/1.65 "JetBrains Mono", "Fira Code", ui-monospace, Consolas, "Courier New", monospace; -webkit-font-smoothing:antialiased; }
   a { color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule); transition:border-color .15s; }
   a:hover { border-bottom-color:var(--ink); }
 
@@ -30,6 +30,7 @@
     transition: grid-template-columns .55s cubic-bezier(.4,0,.2,1), gap .55s cubic-bezier(.4,0,.2,1), min-height .55s cubic-bezier(.4,0,.2,1);
   }
   .hero h1 {
+    font-family:-apple-system, "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
     font-size:clamp(56px, 9vw, 120px);
     font-weight:800;
     letter-spacing:-2.5px;

@@ -1,0 +1,51 @@
+# robots.txt
+# A personal stance against scraping for AI training.
+# This file is a request: compliant crawlers honor it, others do not.
+
+# --- Honeypot ---------------------------------------------------------------
+# Compliant crawlers obey this Disallow and never touch the trap.
+# Anything that fetches /gibberish.html has self-identified as ignoring rules.
+User-agent: *
+Disallow: /gibberish.html
+
+# --- AI training crawlers (blocked) -----------------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# --- Everyone else (normal search engines) is welcome -----------------------
+# Note: the wildcard block above already sets the only Disallow for "*".
+# Regular search crawlers (Googlebot, Bingbot, etc.) are not AI-training
+# agents and are free to index the rest of the site normally.
